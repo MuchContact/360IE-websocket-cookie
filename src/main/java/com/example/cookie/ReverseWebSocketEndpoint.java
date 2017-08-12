@@ -23,8 +23,6 @@ import java.io.IOException;
 
 @ServerEndpoint(value = "/reverse")
 public class ReverseWebSocketEndpoint {
-	public ReverseWebSocketEndpoint() {
-	}
 
 	@OnMessage
 	public void handleMessage(Session session, String message) throws IOException {
